@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<ul>
+  {% for project in site.projects %}
+	  <li>
+			<a href="{{ project.url | relative_url }}">
+        <img src="{{ project.thumbnail_path }}" alt="">
+			</a>
+		</li>
+  {% endfor %}
+</ul>

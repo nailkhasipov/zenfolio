@@ -1,0 +1,17 @@
+title: Your awesome title
+email: your-email@domain.com
+author: Test Title
+description: Test description
+
+baseurl: ""
+url: ""
+
+collections:
+  projects:
+    layout: project    
+    output: true
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
