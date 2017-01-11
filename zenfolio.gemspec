@@ -1,8 +1,8 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "zenfolio"
-  spec.version       = "0.1.0"
+  spec.name          = "zenfolio-jekyll-theme"
+  spec.version       = "0.1.1"
   spec.authors       = ["Noel Khasipov"]
   spec.email         = ["noel@noelkhasipov.com"]
 
