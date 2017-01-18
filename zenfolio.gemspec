@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "zenfolio-jekyll-theme"
-  spec.version       = "0.1.333"
+  spec.version       = "0.1.3"
   spec.authors       = ["Noel Khasipov"]
   spec.email         = ["noel@noelkhasipov.com"]
 
