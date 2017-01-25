@@ -5,6 +5,136 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: 'Merriweather', serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 18px;
+      color: #333;
+    }
+
+    section {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #f3f3f2;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    header h1 a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    header h3 {
+      color: #666666;
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      float: left;
+      margin: 10px;
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    h4 a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    h2 {
+      margin-bottom: 45px;
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 30px;
+      line-height: 25px;
+      font-weight: 300;
+    }
+
+    figure {
+      position: relative;
+      background: #ddd;
+      padding-bottom: 52%;
+    }
+
+    figure img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    footer h6 {
+      font-size: 14px;
+      color: #666;
+      margin-top: 100px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1000px) {
+      section {
+        width: 640px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body{
+        font-size: 16px;
+      }
+
+      header h3 {
+        font-size: 16px;
+      }
+
+      section {
+        width: 320px;
+      }
+    }
+  </style>
 </head>

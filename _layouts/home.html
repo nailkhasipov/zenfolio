@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-
-<ul>
-  {% for project in site.projects %}
-	  <li>
-			<a href="{{ project.url | relative_url }}">
-        <img src="{{ project.thumbnail_path }}" alt="">
-			</a>
-		</li>
-  {% endfor %}
-</ul>
+<section>
+  <ul>
+    {% for project in site.projects %}
+  	  <li>
+  			<a href="{{ project.url | relative_url }}">
+          <img src="{{ project.thumbnail_path }}" width="300" height="280" alt="{{ project.title }}">
+  			</a>
+        <h4>
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h4>
+  		</li>
+    {% endfor %}
+  </ul>
+</section>
