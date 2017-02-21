@@ -6,4 +6,8 @@ layout: page
   <img src="{{ page.mockup_path }}" alt="{{ project.title }}">
   <p>{{ content }}</p>
   <img src="{{ page.image_path }}" alt="{{ project.title }}">
+  {% if page.image2_path %}
+    <br>
+    <img src="{{ page.image2_path }}" alt="{{ project.title }}">
+  {% endif %}
 </section>
